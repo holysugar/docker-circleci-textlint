@@ -1,0 +1,17 @@
+{
+    "plugins": [
+        "review"
+    ],
+    "rules": {
+        "preset-ja-technical-writing": true,
+        "spellcheck-tech-word": true
+    },
+    "filters": {
+        "comments": true,
+        "whitelist": {
+          "allow": [
+            // ....
+          ]
+        }
+    }
+}
