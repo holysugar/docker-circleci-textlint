@@ -9,6 +9,8 @@ RUN npm install -g \
     textlint-rule-preset-ja-technical-writing \
     textlint-rule-spellcheck-tech-word
 
+RUN chown -R root:root /usr/local/lib/node_modules
+
 COPY .textlintrc /etc/textlintrc
 COPY textlint.sh /usr/local/bin/
 RUN chmod 755 /usr/local/bin/textlint.sh
