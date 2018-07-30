@@ -1,5 +1,7 @@
-FROM node:8.1-slim
+FROM circleci/node:8.9.3-stretch
 WORKDIR /textlint
+
+USER root
 
 RUN npm install -g \
     textlint \
